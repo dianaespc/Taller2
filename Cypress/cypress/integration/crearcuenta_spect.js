@@ -7,7 +7,7 @@ describe('Los estudiantes signup', function() {
       cy.contains('Registrarse').click()
       cy.get('.cajaSignUp').find('input[name="nombre"]').click().type("Diana")
       cy.get('.cajaSignUp').find('input[name="apellido"]').click().type("Espitia")
-      cy.get('.cajaSignUp').find('input[name="correo"]').click().type("dp.espitia@uniandes.edu.co")
+      cy.get('.cajaSignUp').find('input[name="correo"]').click().type("dpespitia@uniandes.edu.co")
       cy.get('.cajaSignUp').find('select[name="idUniversidad"]').select("universidad-de-los-andes")
       cy.get('.cajaSignUp').find('input[type="checkbox"]').check()
       cy.get('.cajaSignUp').find('select[name="idPrograma"]').select("16")
