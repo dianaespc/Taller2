@@ -5,7 +5,7 @@ describe('Los estudiantes signup', function() {
       //Lineas nuevas
       cy.contains('Ingresar').click()
       cy.contains('Registrarse').click()
-      cy.get('.cajaLogIn').find('input[name="correo"]').click().type("dpespitia@uniandes.edu.co")
+      cy.get('.cajaLogIn').find('input[name="correo"]').click().type("despitia@uniandes.edu.co")
       cy.get('.cajaLogIn').find('input[name="password"]').click().type("pruebataller3")
       cy.get('.cajaLogIn').contains('Ingresar').click()
     })
